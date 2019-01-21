@@ -10,5 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^4.9.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewle95/job-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andrewle95/job-portfolio/issues"
+  },
+  "homepage": "https://github.com/andrewle95/job-portfolio#readme"
 }
