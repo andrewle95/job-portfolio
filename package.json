@@ -9,6 +9,7 @@
   "author": "Andrew Le",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.9.2"
   },
   "repository": {
