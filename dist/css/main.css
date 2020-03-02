@@ -148,10 +148,10 @@ main {
   main .icons {
     margin-top: 1rem; }
     main .icons a {
-      padding: 0.4rem; }
+      padding: 0.4rem;
+      transition: all 0.5s ease-out; }
       main .icons a:hover {
-        color: #eece1a;
-        transition: all 0.5s ease-out; }
+        color: #eece1a; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -165,7 +165,7 @@ main {
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
-    border-radius: 50%;
+    border-radius: 20%;
     border: #eece1a 3px solid; }
   .about-info .bio {
     grid-area: bio;
@@ -187,11 +187,38 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: 3px #ffffff00 solid; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
+
+.project {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "compImage desc desc" "img1 img2 img3";
+  grid-template-columns: repeat(3, 1fr); }
+  .project .comp-image {
+    grid-area: compImage;
+    width: 100%;
+    border-radius: 20%;
+    border: #eece1a 3px solid; }
+  .project .desc {
+    grid-area: desc;
+    font-size: 1.5rem; }
+  .project .img-1 {
+    grid-area: img1; }
+  .project .img-2 {
+    grid-area: img2; }
+  .project .img-3 {
+    grid-area: img3; }
+  .project .img {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: #eece1a 5px solid; }
+  .project .example-image {
+    width: 100%;
+    border: 3px #ffffff00 solid; }
 
 .boxes {
   display: flex;
@@ -238,7 +265,7 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
